@@ -1,0 +1,304 @@
+/* SETEAR ESTILOS POR DEFECTO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* DEFINIMOS VARIABLES DE MARCA */
+:root{
+    --color-primario: #6644B8;
+    --color-secundario: #bb00bd;
+    --color-fondoA : #221039;
+    --color-fondoB : #37274b;
+}
+
+/* ESTILOS PAGINA DE INICIO */
+#cont-inicio{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/home-img.png") var(--color-fondoA);
+    text-align: center;
+    padding-top: 415px;
+}
+
+#cont-inicio p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+.btn-principal{
+    padding: 14px 40px;
+    background: var(--color-primario);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 70px auto 10px;
+    text-decoration: none;
+}
+
+.btn-secundario{
+    padding: 14px 40px;
+    background: var(--color-fondoB);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 0;
+    text-decoration: none;
+}
+/* eSTILOS reGISTRO */
+
+#cont-registro{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/register-img.png") var(--color-fondoA);
+    text-align: center;
+    padding-top: 200px;
+}
+
+#cont-registro p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+#cont-registro form{
+    width: 92%;
+    margin: 40px auto 0;
+}
+
+#cont-registro form input{
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+/* ESTILOS HOME */
+
+#cont-home{
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--color-fondoA);
+}
+#cont-home .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+#cont-home .header img{
+    width: 50px;
+}
+
+#cont-home .header a:nth-child(3) img{
+    border-radius: 50%;
+}
+
+#cont-home .filtros{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: var(--color-fondoB);
+    border: 2px solid var(--color-primario);
+    border-radius: 12px;
+}
+
+#cont-home .filtros button{
+    background: transparent;
+    padding: 12px 10px;
+    width: 33.3%;
+    border-radius: 12px;
+    border-color: transparent;
+    color: #fff;
+
+}
+
+#cont-home .filtros button.active1{
+    background: var(--color-primario);
+    font-weight: 600;
+}
+#cont-home .filtros #anime{
+    background: transparent;
+}
+#cont-home .filtros #anime.active2{
+    background: var(--color-primario);
+    font-weight: 600;
+}
+#cont-home .filtros #drama{
+    background: transparent;
+}
+#cont-home .filtros #drama.active3{
+    background: var(--color-primario);
+    font-weight: 600;
+}
+#copy-category{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#cont-aventuras{
+    width: 90%;
+    margin: 0 auto;
+
+}
+#cont-aventuras h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#cont-aventuras hr{
+    width: 140px;
+    height: 2px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+
+}
+
+.cont-caratulas{
+    display: flex;
+    overflow-x: scroll;
+}
+.caratula{
+    background: #fff;
+    border: transparent;
+    border-radius: 20px 0 20px 0 ;
+    width: 170px;
+    padding: 2px;
+    margin: 0 10px 0 0;
+
+
+
+}
+.caratula img{
+    width: 160px;
+    border-radius: 20px 0 20px 0 ;
+
+}
+/* modal */
+#modal-pelicula{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+    display: none;
+}
+
+#modal-pelicula.active{
+    display: block;
+}
+
+#modal-pelicula button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: #fff;
+}
+
+#modal-pelicula .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+
+}
+
+#modal-pelicula p{
+    font-size: 18px;
+    color: #fff;
+    margin: 14px 0;
+
+}
+/* Panel lateral */
+#Panel-lateral{
+
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top:0;
+    z-index: 9;
+    background:var(--color-fondoA);
+    border: 3px solid var(--color-primario);
+    transition: 1s;
+}
+.logito img{
+    position: absolute;
+    left: 320px;
+    width: 50px;
+}
+#Panel-lateral.active{
+    left: 0;
+}
+#Panel-lateral h2{
+    color: #fff;
+    padding-top: 60px;
+    margin-left: 50px;
+    font-size: 20px;
+    /* border-bottom: 2px solid var(--color-primario); */
+    text-decoration: 5px underline var(--color-primario);
+}
+#Panel-lateral ul{
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 80px;   
+}
+#Panel-lateral ul a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    margin: 15px 0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .5s;
+}
+
+#Panel-lateral ul a:hover{
+    border-radius: 50px;
+    }
+
+#Panel-lateral .sesion{
+    padding-top: 60px;
+}
+    

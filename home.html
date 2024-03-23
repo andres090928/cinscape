@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCAPE|INICIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="cont-home">
+        
+        <div class="header">
+            <a href="#"><img src="img/menu.png" alt="Icon Menu" onclick="PanelLateral()"></a>
+            <a href="#"><img src="img/icon-logo.png" alt="Icon log"></a>
+            <a href="#"><img src="img/user.png" alt="Icon user"></a>
+        </div>
+
+        <div class="filtros">
+            <button class="active1" onclick="aventuras()">Aventuras</button>
+            <button id="anime" onclick="animadas()">Animadas</button>
+            <button id="drama" onclick="drama()">Drama</button>
+        </div>
+
+        <p id="copy-category">
+            Descubre emocionantes peliculas de aventura lleans de accion, peligro y exoticos lugares en CINESCAPE.
+        </p>
+        <div id="cont-aventuras">
+            <h2>Estrenos</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula">
+                    <img src="img/guardianes3.jpg" alt="guardianes3" id="imagen1" onclick="caratula()">
+                </button>
+                <button class="caratula">
+                    <img src="img/mariobros.jpg" alt="guardianes3" id="imagen2" onclick="caratula()">
+                </button>
+                <button class="caratula">
+                    <img src="img/flash.jpg" alt="guardianes3" id="imagen3" onclick="caratula()">
+                </button>
+                <button class="caratula">
+                    <img src="img/dungeons.jpg" alt="guardianes3" id="imagen4" onclick="caratula()">
+                </button>
+            </div>
+            <h2>Proximamente</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula">
+                    <img src="img/flash.jpg" alt="guardianes3" id="imagen5" onclick="caratula()">
+                </button>
+                <button class="caratula">
+                    <img src="img/megalodon.jpg" alt="guardianes3" id="imagen6" onclick="caratula()">
+                </button>
+                <button class="caratula">
+                    <img src="img/barbie.jpeg" alt="guardianes3" id="imagen7" onclick="caratula()">
+                </button>
+                <button class="caratula">
+                    <img src="img/lasirenita.jpg" alt="guardianes3" id="imagen8" onclick="caratula()">
+                </button>
+            </div>
+        </div>
+        
+        <div id="modal-pelicula">
+            <button onclick="cerrar()">X</button>
+            <img src="img/mariobros.jpg" class="caratula-img" alt="Mario Bros" >
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton play" >
+
+            <h2>Super Mario <br>
+            Broos. La Pelicula
+            </h2>
+            <p>Estreno 06-Abril-2023</p>
+            <p>Acción, Comedia</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas illum quos id, labore ipsum vero quibusdam voluptatibus neque recusandae obcaecati placeat! Accusamus, harum earum culpa eveniet veniam voluptas debitis iusto eos, impedit animi laboriosam praesentium consequuntur rem atque corrupti.</p>
+        </div>
+        <div id="Panel-lateral">
+            <div class="logito">
+             <a href="#"><img src="img/menu.png" alt="Icon Menu" onclick="cerrar2()"></a>
+            </div>
+            <h2>Editar mi cuenta</h2>
+            <ul>
+                <a href="#"> -Home</a>
+                <a href="#"> -Aventuras</a>
+                <a href="#"> -Animadas</a>
+                <a href="#"> -Drama</a>
+                <a href="#"> -Comedia</a>
+                <a href="#"> -Ficcion</a>
+                <a href="#"> -Nacionales</a>
+                <a href="index.html" class="sesion"> -Cerrar Sesion</a>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
